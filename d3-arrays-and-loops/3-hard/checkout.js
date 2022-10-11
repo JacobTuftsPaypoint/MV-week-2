@@ -24,6 +24,33 @@
                             finalise()  no parameters
             returns final cost
   */
+const checkout = {
+  items:[],
+  weight:0,
+  cost:0,
+  scanItems(ItemArray){
+    ItemArray.forEach(element => {
+      console.log(element)
+      this.items.push(element)
+      this.weight += element.weight
+      this.cost += element.cost
+    });
+  },
+  removeItem(Item){
+    this.items.splice(this.items.indexOf(Item),1)
+    this.weight-=Item.weight
+    this.cost-=Item.cost
+  },
+  reset(){
+    this.items = []
+    this.weight = 0
+    this.cost = 0
+  },
+  finalise(){
+    return(this.cost)
+  }
+}
+
 
 let itemsList = {};
 

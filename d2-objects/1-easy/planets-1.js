@@ -11,13 +11,33 @@ https://www.schoolsobservatory.org/discover/quick/planet_age
 Using the above chart, create an object for each planet with the provided properties and their values.
 */
 
-let earth = {};
+let earth = {
+    radius: 6378,
+    yearLength: 365.25,
+    surfaceGravity: 1,
+    moons: 1
+};
 
-let venus = {};
+let venus = {
+    radius:6052,
+    yearLength:225,
+    surfaceGravity:0.91,
+    moons:0
+};
 
-let mercury = {};
+let mercury = {
+    radius:2440,
+    yearLength:88,
+    surfaceGravity:0.38,
+    moons:0
+};
 
-let mars = {};
+let mars = {
+    radius:3397,
+    yearLength:687,
+    surfaceGravity:0.38,
+    moons:2
+};
 
 // Test command (in terminal) "npm run test:d2:easy:planets-1"
 module.exports = { mercury, venus, earth, mars };

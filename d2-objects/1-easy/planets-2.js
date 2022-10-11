@@ -15,6 +15,29 @@ Now create a method (called getYearLength) that returns the yearLength value wit
 eg mercury.yearLength => 88
 eg mercury.getYearLength() => 88 (Earth Days)
 */
-
+const mercury = {
+    yearLength:88,
+    getYearLength(){
+        return(this.yearLength+" (Earth Days)")
+    }
+}
+const venus = {
+    yearLength:225,
+    getYearLength(){
+        return(this.yearLength+" (Earth Days)")
+    }
+}
+const earth = {
+    yearLength:365.25,
+    getYearLength(){
+        return(this.yearLength+" (Earth Days)")
+    }
+}
+const mars = {
+    yearLength:687,
+    getYearLength(){
+        return(this.yearLength+" (Earth Days)")
+    }
+}
 // Test command (in terminal) "npm run test:d2:easy:planets-2"
 module.exports = { mercury, venus, earth, mars };

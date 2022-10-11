@@ -15,14 +15,21 @@ can be accessed exactly the same way, using the dot notation.
 
 */
 function launchCodeCheck(code) {
-  //Code here
+  if(code.length<8){
+    return("Launch code is too short.")
+  } else {
+    return("Launch code is long enough.")
+  }
 }
 
 function sayItLoudly(str) {
-  //code here
+  return(str.toUpperCase()+"!")
 }
 function indoorVoice(str) {
-  //code here
+  if(str.includes("!")){
+    return("shhhh")
+  }
+  return(str.toLowerCase())
 }
 
 // Test command (in terminal) "npm run test:d2:easy:string-methods"
